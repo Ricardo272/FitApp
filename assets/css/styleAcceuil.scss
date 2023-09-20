@@ -1,0 +1,55 @@
+$MyFont: "roboto", sans-serif;
+
+
+@mixin BarreNav {
+    border: solid black;
+    height: 56px;
+    background-color: #39AFEA;
+}
+
+@mixin PDP {
+    width: 40px;
+    height: 40px;
+}
+
+@mixin FullBarreNav {
+    @include BarreNav;
+    @include PDP;
+}
+
+
+body {
+    background-color: #5E69EE;
+    margin: 0;
+}
+
+.NavBarre {
+    @include FullBarreNav;
+    height: 56px;
+    width: 360px;
+}
+
+.PDP {
+    width: 40px;
+    height: 40px;
+    float: left;
+    padding: 0 1rem 0 0;
+}
+
+h1 {
+    margin: 0.5rem;
+}
+
+.course {
+    width: 320px;
+    height: 123px;
+    border-radius: 25px;
+}
+
+.photo-course {
+    margin-left: 1.5rem;
+}
+.p1 { 
+    font-size: 20px;
+}
+.p2 {font-size: 14px;}

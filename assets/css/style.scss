@@ -1,0 +1,47 @@
+$MyFont: "roboto", sans-serif;
+
+@mixin Mybutton {
+    background-color: red;
+    height: 48px;
+    width: 330px;
+    margin: 1rem 1rem 1rem 2rem;
+    border-radius: 0.7rem;
+    color: white;
+    font-size: 24px;
+    font-family: $MyFont;
+
+}
+
+body {
+    background-image: url(../img/BGcrop.jpg);
+    background-size: cover;
+    font-family: $MyFont;
+}
+
+div {
+    color: white;
+    margin: 12rem 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+}
+
+h2 {
+    font-size: 64px;
+    margin: 0;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    text-transform: uppercase
+}
+
+
+button {
+    @include Mybutton;
+}
+.connexion {
+    margin-bottom: 2rem;
+}
